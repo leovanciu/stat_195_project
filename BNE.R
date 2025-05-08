@@ -108,7 +108,7 @@ fit_one <- function(name) {
   )
   sampling(sm, data = dat,
            chains = 4, cores = 4,
-           iter = 250, warmup = 100,
+           iter = 1000, warmup = 1000,
            control = list(adapt_delta=0.9, max_treedepth=12))
 }
 
