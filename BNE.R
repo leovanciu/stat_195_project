@@ -76,8 +76,8 @@ transformed parameters {
 }
 model {
   // priors
-  s1 ~ normal(0,1);  r1 ~ normal(0,1);
-  s2 ~ normal(0,1);  r2 ~ normal(0,1);
+  s1 ~ normal(0,1);  r1 ~ lognormal(0,1);
+  s2 ~ normal(0,1);  r2 ~ lognormal(0,1);
   z1 ~ normal(0,1);  z2 ~ normal(0,1);
   f0 ~ normal(0,1);
 
